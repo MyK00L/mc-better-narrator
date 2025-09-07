@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "better-narrator",
+	"version": "${version}",
+	"name": "Better Narrator",
+	"description": "todo",
+	"authors": [
+		"MyK_00L"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/better-narrator/icon.png",
+	"environment": "*",
+	"entrypoints": {},
+	"mixins": [
+		{
+			"config": "better-narrator.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
