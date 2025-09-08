@@ -3,17 +3,17 @@
 	"id": "better-narrator",
 	"version": "${version}",
 	"name": "Better Narrator",
-	"description": "todo",
+	"description": "Removes narration elements with type POSITION, HINT, USAGE. Adds narration of inventory items when hovered.",
 	"authors": [
 		"MyK_00L"
 	],
 	"contact": {
-		"homepage": "",
-		"sources": ""
+		"homepage": "https://github.com/MyK00L/mc-better-narrator",
+		"sources": "https://github.com/MyK00L/mc-better-narrator"
 	},
 	"license": "MIT",
 	"icon": "assets/better-narrator/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {},
 	"mixins": [
 		{
