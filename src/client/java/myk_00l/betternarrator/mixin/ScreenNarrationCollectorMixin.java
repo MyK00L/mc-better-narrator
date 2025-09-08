@@ -11,13 +11,10 @@ import java.util.Map;
 
 @Mixin(ScreenNarrationCollector.class)
 public class ScreenNarrationCollectorMixin {
-    
     @Shadow
     private Map<?, ?> entries;
-    
     @Inject(method = "collectNarrationText", at = @At("HEAD"), cancellable = true)
     private void filterNarrationText(boolean bl, CallbackInfoReturnable<String> cir) {
-        // Filter entries to only include TITLE type narrations
         this.entries.entrySet().removeIf(entry -> {
             Object key = entry.getKey();
             EntryKeyAccessor keyAccessor = (EntryKeyAccessor) key;
