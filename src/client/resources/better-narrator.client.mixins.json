@@ -6,7 +6,9 @@
 	"client": [
 		"AbstractContainerScreenMixin",
 		"ScreenNarrationCollectorMixin",
-		"EntryKeyAccessor"
+		"EntryKeyAccessor",
+		"InventoryAccessor",
+		"InventoryMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
